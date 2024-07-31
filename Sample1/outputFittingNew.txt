@@ -1,0 +1,67 @@
+Max index:  9826  Max frequency:  3746413245.66
+Peak limits:  9811 9840
+Lower edge:  3746405745.29  Center:  3746413245.66  Upper edge:  3746420246.01  Points in width:  29
+20000 20000
+-2.5830248811222867 7.126361095174449e-10 213.93081509159632 -5.7567529156676434e-08
+[[Variables]]
+    a:  -404.902657 +/- 362.250033 (89.47%) (init = -2.583025)
+    b:   2.1635e-07 +/- 1.9338e-07 (89.38%) (init = 7.126361e-10)
+    c:  -2.8896e-17 +/- 2.5808e-17 (89.32%) (init = 0)
+    ap:  33.6222598 +/- 2.83788423 (8.44%) (init = 213.9308)
+    bp: -9.4380e-09 +/- 7.5748e-10 (8.03%) (init = -5.756753e-08)
+    cp:  0 (fixed)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(b, c)   = -1.0000
+    C(a, b)   = -1.0000
+    C(a, c)   = +1.0000
+    C(ap, bp) = -1.0000
+[[Variables]]
+    a:     -404.9027 (fixed)
+    b:      2.163549e-07 (fixed)
+    c:     -2.889564e-17 (fixed)
+    ap:     33.62226 (fixed)
+    bp:    -9.438009e-09 (fixed)
+    cp:     0 (fixed)
+    Qint:   644385.883 +/- 385308.930 (59.79%) (init = 202664.7)
+    Qext:   38722.5371 +/- 1027.96044 (2.65%) (init = 202664.7)
+    f0:     3.7464e+09 +/- 2502.73837 (0.00%) (init = 3.746413e+09)
+    theta:  0.31592592 +/- 0.02830859 (8.96%) (init = 0)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(f0, theta)   = -0.7656
+    C(Qint, f0)    = +0.6517
+    C(Qint, theta) = -0.4990
+    C(Qext, f0)    = +0.2294
+    C(Qint, Qext)  = +0.1915
+    C(Qext, theta) = -0.1757
+QLoaded =  36527.519647981244
+[[Variables]]
+    a:     -632.764804 +/- 350.945375 (55.46%) (init = -404.9027)
+    b:      3.3785e-07 +/- 1.8735e-07 (55.45%) (init = 2.163549e-07)
+    c:     -4.5090e-17 +/- 2.5003e-17 (55.45%) (init = -2.889564e-17)
+    ap:     53.5719027 +/- 2.89077267 (5.40%) (init = 33.62226)
+    bp:    -1.4763e-08 +/- 7.7159e-10 (5.23%) (init = -9.438009e-09)
+    cp:     0 (fixed)
+    Qint:   585732.814 +/- 324476.222 (55.40%) (init = 644385.9)
+    Qext:   37102.9423 +/- 995.744865 (2.68%) (init = 38722.54)
+    f0:     3.7464e+09 +/- 2575.10346 (0.00%) (init = 3.746394e+09)
+    theta:  0.32374702 +/- 0.02840576 (8.77%) (init = 0.3159259)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(a, b)        = -1.0000
+    C(b, c)        = -1.0000
+    C(a, c)        = +1.0000
+    C(ap, bp)      = -1.0000
+    C(f0, theta)   = -0.7733
+    C(Qint, f0)    = +0.6396
+    C(Qint, theta) = -0.4906
+    C(Qext, f0)    = +0.2380
+    C(Qint, Qext)  = +0.2106
+    C(ap, Qext)    = -0.1859
+    C(bp, Qext)    = +0.1858
+    C(Qext, theta) = -0.1790
+    C(a, Qext)     = +0.1001
+    C(b, Qext)     = -0.1000
+QLoaded =  34892.68334913766
+Fitting parameters: (Parameters([('a', <Parameter 'a', value=np.float64(-632.7648044004175) +/- 351, bounds=[-inf:inf]>), ('b', <Parameter 'b', value=np.float64(3.378463784453832e-07) +/- 1.87e-07, bounds=[-inf:inf]>), ('c', <Parameter 'c', value=np.float64(-4.5089806081603817e-17) +/- 2.5e-17, bounds=[-inf:inf]>), ('ap', <Parameter 'ap', value=np.float64(53.57190269943494) +/- 2.89, bounds=[-inf:inf]>), ('bp', <Parameter 'bp', value=np.float64(-1.4762638615062575e-08) +/- 7.72e-10, bounds=[-inf:inf]>), ('cp', <Parameter 'cp', value=0.0 (fixed), bounds=[-inf:inf]>), ('Qint', <Parameter 'Qint', value=np.float64(585732.8139510367) +/- 3.24e+05, bounds=[0:inf]>), ('Qext', <Parameter 'Qext', value=np.float64(37102.94234020434) +/- 996, bounds=[0:inf]>), ('f0', <Parameter 'f0', value=np.float64(3746392564.2218947) +/- 2.58e+03, bounds=[-inf:inf]>), ('theta', <Parameter 'theta', value=np.float64(0.3237470158679472) +/- 0.0284, bounds=[-inf:inf]>)]), array([3.7415000e+09, 3.7415005e+09, 3.7415010e+09, ..., 3.7514990e+09,
+       3.7514995e+09, 3.7515000e+09]), array([ 0.00967483-0.08548128j,  0.00418203-0.05357862j,
+        0.00270968-0.06739552j, ..., -0.01261865-0.06431697j,
+       -0.00097342-0.07584713j, -0.01683551-0.06765603j]), <lmfit.minimizer.MinimizerResult object at 0x000001C47CDBBD70>)
