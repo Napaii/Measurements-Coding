@@ -8,7 +8,7 @@ from scipy.interpolate import make_interp_spline, PchipInterpolator, Akima1DInte
 import sys
 import os
 
-mpl.rcParams['figure.dpi'] = 150
+mpl.rcParams['figure.dpi'] = 100
 
 def Qfun(x, Gi, Gp, nc, alpha):
     return Gi + Gp / (1 + (x / nc))**alpha
