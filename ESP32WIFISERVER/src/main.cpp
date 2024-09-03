@@ -27,6 +27,31 @@ void setup() {
   Serial.println("Starting...");  // Print starting message
 }
 
+void sendMessage() {
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+    http.begin(serverName);
+
+    int httpResponseCode = http.GET();
+
+    if (httpResponseCode == HTTP_CODE_OK) { // Check if the response code is 200 (HTTP OK)
+      String response = http.getString();
+      Serial.print("HTTP Response code: ");
+      Serial.println(httpResponseCode);
+      successfulSends++;
+    } else {
+      Serial.print("Error code: ");
+      Serial.println(httpResponseCode);
+      failedSends++;
+    }
+    
+    http.end();
+  } else {
+    Serial.println("WiFi Disconnected. Reconnecting...");
+    failedSends++;
+  }
+}
+
 void loop() {
   // Check the Wi-Fi connection status
   if (WiFi.status() == WL_CONNECTED) {
@@ -60,29 +85,4 @@ void loop() {
   Serial.print("Failed Sends: ");
   Serial.println(failedSends);
   delay(1000);  // Adjust as needed
-}
-
-void sendMessage() {
-  if (WiFi.status() == WL_CONNECTED) {
-    HTTPClient http;
-    http.begin(serverName);
-
-    int httpResponseCode = http.GET();
-
-    if (httpResponseCode > 0) {
-      String response = http.getString();
-      Serial.print("HTTP Response code: ");
-      Serial.println(httpResponseCode);
-      successfulSends++;
-    } else {
-      Serial.print("Error code: ");
-      Serial.println(httpResponseCode);
-      failedSends++;
-    }
-    
-    http.end();
-  } else {
-    Serial.println("WiFi Disconnected. Reconnecting...");
-    failedSends++;
-  }
 }
